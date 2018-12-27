@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.register_box{
+    width: 778px;
+    height: 708px;
+    background-color: rgba(255,255,255,0.5);
+    box-shadow: 0 5px 17.1px 0.9px
+    rgba(28, 26, 29, 0.3);
+    border-radius: 10px;
+    border: solid 1px rgba(28, 26, 29, 0.32);
+    margin: 5% auto;
+}
+.login{
+    width: 650px;
+    height: 84px;
+    background-color: pink;
+    margin: 0 auto;
+    margin-top: 46px;
+}
+.login_con_box{
+    width: 343px;
+    margin: 0 auto;
+    margin-top: 78px;
+    display: flex;
+    flex-direction: column;
+}
+.login_option{
+    width: 100%;
+    display: flex;
+    flex-direction:column;
+}
+.login_way{
+    width: 100%;
+    height: 22px;
+    font-size: 22px;
+    color: #020202;
+    line-height: 22px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+.pitch_on_style{
+    width: 100%;
+    height: 5px;
+    background-color: #d9d7d2;
+    border-radius: 3px;
+}
