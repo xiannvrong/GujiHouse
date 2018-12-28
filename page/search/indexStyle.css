@@ -4,6 +4,11 @@ html{
 body{
     height: 100%;
 }
+*{
+    margin:0;
+    padding:0;
+    list-style: none;
+}
 .outer_container{
     width: 100%;
     /* height: auto; */
@@ -246,3 +251,24 @@ body{
  .main_content_readBut img{
      vertical-align: -4px;
  }
+.classify_wrap{
+    width: 300px;
+    margin: 0 auto;
+}
+.classify_area{
+    list-style: none;
+    color: #626160;
+    font-size: 15px;
+}
+.classify_option{
+    font-size: 15px;
+    color: #020202;
+    cursor: pointer;
+}
+.classify_option ul{
+    display: none;
+    padding-left:20px;
+}
+.tree-show>ul{
+    display: block;
+}

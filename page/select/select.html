@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>多级菜单</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            list-style: none;
+        }
+        .classify_wrap{
+            width: 300px;
+            margin: 0 auto;
+        }
+        .classify_area{
+            list-style: none;
+        }
+        .classify_option ul{
+            display: none;
+            padding-left:20px;
+        }
+        .tree-show>ul{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+<div class="classify_wrap">
+    <ul class="classify_area">
+        <li class="classify_option">
+            <img src="../../images/search/sanjiao.png" alt="" class="state_img">
+            <img src="../../images/search/weixuanzhong.png" class="no_pitch_on" alt="">
+            <!--<img src="../../images/search/xuanzhong.png" class="pitch_on" alt="">-->
+            <span>經部</span>
+            <ul>
+                <li>叢編</li>
+                <li>易類</li>
+                <li>書類</li>
+                <li>詩類</li>
+                <li>周禮類</li>
+                <li>儀禮類</li>
+                <li>禮記類</li>
+                <li>三禮總義類</li>
+                <li>雜禮書類</li>
+                <li>春秋類</li>
+                <li class="classify_option">
+                    <img src="../../images/search/sanjiao.png" alt="" class="state_img">
+                    <span>四書類</span>
+                    <ul>
+                        <li><span>叢編</span></li>
+                        <li><span>雜禮書類</span></li>
+                    </ul>
+                </li>
+                <li><span>孝經類</span></li>
+                <li><span>五經總義類</span></li>
+                <li class="classify_option">
+                    <img src="../../images/search/sanjiao.png" alt="" class="state_img">
+                    <span>小學類</span>
+                    <ul>
+                        <li><span>叢編</span></li>
+                        <li><span>雜禮書類</span></li>
+                    </ul>
+                </li>
+                <li><span>識緯類</span></li>
+            </ul>
+        </li>
+    </ul>
+</div>
+</body>
+<script src="../js/jquery-3.3.1.min.js"></script>
+<script>
+    $(".classify_option>span").on("click",function(){
+        if($(this).parent(".classify_option").hasClass("tree-show")){
+            $(this).parent(".classify_option").removeClass("tree-show").find(".classify_option").removeClass("tree-show");
+            $(".state_img").attr("src", "../../images/search/sanjiao.png");
+        }else{
+            $(this).parent(".classify_option").addClass("tree-show");
+            $(".state_img").attr("src", "../../images/search/xiala.png");
+        }
+    });
+    $(".no_pitch_on").click(function(){
+            $(".no_pitch_on").attr("src", "../../images/search/xuanzhong.png");
+    });
+</script>
+</html>
