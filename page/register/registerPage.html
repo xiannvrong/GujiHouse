@@ -6,17 +6,56 @@
     <link rel="stylesheet" href="css/registerStyle.css">
 </head>
 <body>
-    <div class="register_box">
-        <div class="login"></div>
-        <div class="login_con_box">
-            <div class="login_option">
-                <div class="login_way">
-                    <div>會員登錄</div>
-                    <div>會員註冊</div>
+    <div class="wrapper">
+        <div class="register_box">
+            <div class="login">
+                <img src="../images/Login&Register/logo.png" alt="">
+            </div>
+            <div class="login_con_box">
+                <div class="login_option">
+                    <div class="login_way">
+                        <div class="login_way_left">會員登錄</div>
+                        <div class="login_way_right">會員註冊</div>
+                    </div>
+                    <div class="pitch_on_style">
+                        <img src="../images/Login&Register/default_icon.png" alt="">
+                        <img src="../images/Login&Register/pitch_on_icon.png" class="pitch_on_left" alt="">
+                        <img src="../images/Login&Register/pitch_on_icon.png" class="pitch_on_right" alt="">
+                    </div>
                 </div>
-                <div class="pitch_on_style"></div>
+            </div>
+
+            <!--会员登录-->
+            <div class="login_import_area">
+                <input type="text" placeholder="請輸入郵箱">
+                <input type="text" placeholder="請輸入密碼">
+                <button>登陸</button>
+                <p class="find_password">找回密碼</p>
+            </div>
+
+            <!--会员注册-->
+            <div class="register_import_area_wrap">
+                <div class="register_import_area">
+                    <input type="text" placeholder="用戶名（郵箱）" class="register_import_input">
+                    <input type="text" placeholder="請輸入密碼" class="register_import_input">
+                    <input type="text" placeholder="請確認密碼" class="register_import_input">
+                    <div class="auth_code_area">
+                        <input type="text" placeholder="驗證碼" class="input_auth_code">
+                        <input type="text" class="auth_code">
+                    </div>
+                    <button>登陸</button>
+                </div>
+            </div>
+
+
+            <div class="back_home_page">
+                <img src="../images/Login&Register/back_icon.png" alt="">
+                <span>返回首頁</span>
             </div>
         </div>
     </div>
 </body>
+<script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="js/register.js"></script>
+
 </html>

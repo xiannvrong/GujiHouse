@@ -1,0 +1,12 @@
+$(".login_way_left").click(function(){
+    $(".pitch_on_left").show();
+    $(".pitch_on_right").hide();
+    $(".login_import_area").show();
+    $(".register_import_area_wrap").hide();
+});
+$(".login_way_right").click(function(){
+    $(".pitch_on_left").hide();
+    $(".pitch_on_right").show();
+    $(".login_import_area").hide();
+    $(".register_import_area_wrap").show();
+});
