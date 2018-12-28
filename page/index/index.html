@@ -3,9 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="../../common/css/reset.css">
+    <link rel="stylesheet" href="./css/indexStyle.css">
 </head>
-<body>阻止
-    <div>开始写啦~</div>
-    <div>再试一次~</div>
+<body>   
+    <div class="outer_container">
+        <div class="nav_container">
+            <div class="nav">
+                <a href="#">分類 </a>
+                <a href="#">登錄 </a>
+                <a href="#">註冊 </a>
+                <a href="#">使用幫助 </a>
+            </div>
+        </div>
+        <div class="logo_container"> 
+            <img src="../../images/index_img/logo.png" alt="">
+        </div>
+        <div class="search_container">
+            <div class="search_container_sub">
+                <div class="search_frame">
+                    <ul>
+                        <li class="search_frame_val">字段</li>
+                        <li><input type="text"></li>
+                        <li><img src="../../images/index_img/ser.png"/>&nbsp;&nbsp;檢索</li>
+                    </ul>
+                </div>
+                <div class="search_radio">
+                    <form action="" method="get" class="search_radio_getVal">  
+                        <label><input name="Fruit" type="radio" value="字段" checked/> 字段 </label> 
+                        <label><input name="Fruit" type="radio" value="全文" /> 全文 </label> 
+                        <label><input name="Fruit" type="radio" value="高級檢索" /> 高級檢索 </label> 
+                        <label><input name="Fruit" type="radio" value="分類選擇" /> 分類選擇 </label>   
+                    </form> 
+                </div>
+            </div>
+        </div>
+        <div class="footer_container">
+            京ICP備XXXX中央民族大學圖書舘版權所有
+        </div>
+    </div>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./js/animation.js"></script>
 </body>
 </html>
